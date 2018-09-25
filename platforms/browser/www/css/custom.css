@@ -1,0 +1,40 @@
+.login-screen-title img {
+    min-width: 210px;
+    height: auto;
+    max-width: 290px;
+    width: 100%;
+    margin-top: 40px;
+}
+
+
+.md .stepper-small .stepper-button, .md .stepper-small .stepper-button-minus, .md .stepper-small .stepper-button-plus, .md .stepper-small .stepper-input-wrap, .md .stepper-small .stepper-value, .md .stepper-small-md .stepper-button, .md .stepper-small-md .stepper-button-minus, .md .stepper-small-md .stepper-button-plus, .md .stepper-small-md .stepper-input-wrap, .md .stepper-small-md .stepper-value {
+    border-width: 1px;
+}
+
+.md .stepper-small, .md .stepper-small-md {
+    height: 28px;
+   
+}
+
+
+.profile .profile-image {
+    float: left;
+    width: 100%;
+    margin: 0px 0px 10px;
+    text-align: center;
+}
+
+
+.profile .profile-image img {
+    width: 100px;
+    border: 3px solid #FFF;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.profile .profile-data {
+    width: 100%;
+    float: none;
+    text-align: center;
+}
