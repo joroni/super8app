@@ -2,15 +2,7 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <!--
-  Customize this policy to fit your own app's needs. For more guidance, see:
-      https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
-  Some notes:
-      * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
-      * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
-      * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
-          * Enable inline JS: add 'unsafe-inline' to default-src
-  -->
+ 
   <meta http-equiv="Content-Security-Policy" content="default-src * 'self' 'unsafe-inline' 'unsafe-eval' data: gap: content:">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -35,7 +27,7 @@
         <div class="page">
           <div class="navbar">
             <div class="navbar-inner">
-              <div class="title">Left Panel</div>
+              <div class="title">Account</div>
             </div>
           </div>
           <div class="page-content">
@@ -46,7 +38,7 @@
                     </div>
                     <div class="profile-data">
                         <div class="profile-data-name">John Doe</div>
-                        <div class="profile-data-title">Web Developer/Designer</div>
+                        <div class="profile-data-title">Sales Person</div>
                     </div>
                     <div class="profile-controls">
                         <a href="pages-profile.html" class="profile-control-left"><span class="fa fa-info"></span></a>
@@ -57,31 +49,20 @@
               <div class="list links-list">
                 <ul>
                   <li>
-                    <a href="/accordion/" class="panel-close">Accordion</a>
+                    <a href="/accordion/" class="panel-close">My Profile</a>
                   </li>
                   <li>
-                    <a href="/action-sheet/" class="panel-close">Action Sheet</a>
+                    <a href="/action-sheet/" class="panel-close">Sales Report</a>
                   </li>
                   <li>
-                    <a href="/badge/" class="panel-close">Badge</a>
+                    <a href="/badge/" class="panel-close">Notifications</a>
                   </li>
                   <li>
-                    <a href="/buttons/" class="panel-close">Buttons</a>
+                    <a href="/buttons/" class="panel-close">Settings</a>
                   </li>
+                
                   <li>
-                    <a href="/cards/" class="panel-close">Cards</a>
-                  </li>
-                  <li>
-                    <a href="/checkbox/" class="panel-close">Checkbox</a>
-                  </li>
-                  <li>
-                    <a href="/chips/" class="panel-close">Chips/Tags</a>
-                  </li>
-                  <li>
-                    <a href="/contacts-list/" class="panel-close">Contacts List</a>
-                  </li>
-                  <li>
-                    <a href="/data-table/" class="panel-close">Data Table</a>
+                    <a href="/logout/" class="panel-close">Logout</a>
                   </li>
                 </ul>
               </div>
@@ -148,7 +129,7 @@ Goes here right panel
                 </a>
               </div>
               <div class="title sliding">Home</div>
-              <div class="right">
+              <div class="right hidden">
                 <a href="#" class="link icon-only panel-open" data-panel="right">
                   <i class="icon f7-icons ios-only">menu</i>
                   <i class="icon material-icons md-only">menu</i>

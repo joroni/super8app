@@ -19,16 +19,19 @@ var app  = new Framework7({
         {
           id: '1',
           title: 'Apple iPhone 8',
+          price: '6500',
           description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi tempora similique reiciendis, error nesciunt vero, blanditiis pariatur dolor, minima sed sapiente rerum, dolorem corrupti hic modi praesentium unde saepe perspiciatis.'
         },
         {
           id: '2',
           title: 'Apple iPhone 8 Plus',
+          price: '10500',
           description: 'Velit odit autem modi saepe ratione totam minus, aperiam, labore quia provident temporibus quasi est ut aliquid blanditiis beatae suscipit odio vel! Nostrum porro sunt sint eveniet maiores, dolorem itaque!'
         },
         {
           id: '3',
           title: 'Apple iPhone X',
+          price: '15200',
           description: 'Expedita sequi perferendis quod illum pariatur aliquam, alias laboriosam! Vero blanditiis placeat, mollitia necessitatibus reprehenderit. Labore dolores amet quos, accusamus earum asperiores officiis assumenda optio architecto quia neque, quae eum.'
         },
       ]
@@ -56,6 +59,15 @@ var settingsView = app.views.create('#view-settings', {
 });
 
 
+
+if (!localStorage.getItem("usr") && !localStorage.getItem("pass\s")){
+  app.loginScreen.open('#my-login-screen');
+  console.log("no user");
+}else{
+  app.loginScreen.close('#my-login-screen');
+  console.log("has user");
+}
+
 // Login Screen Demo
 $$('#my-login-screen .login-button').on('click', function () {
   var username = $$('#my-login-screen [name="username"]').val();
@@ -64,27 +76,11 @@ $$('#my-login-screen .login-button').on('click', function () {
   // Close login screen
   app.loginScreen.close('#my-login-screen');
   localStorage.setItem("usr", username);
+  localStorage.setItem("pass", password);
   // Alert username and password
   app.dialog.alert('Username: ' + username + '<br>Password: ' + password);
 });
 
 
-if (!localStorage.getItem("usr")){
-  app.loginScreen.open('#my-login-screen');
-}else{
-  app.loginScreen.close('#my-login-screen');
-}
 
 
-
-if(localStorage.token !== null) {
-  // this will only work if the token is set in the localStorage
-}
-
-if(typeof localStorage.token !== 'undefined') {
- // do something with token
-}
-
-if(typeof localStorage.token === 'undefined') {
- // token doesn't exist in the localStorage, maybe set it?
-}
