@@ -11,9 +11,35 @@
     border-width: 1px;
 }
 
-.md .stepper-small, .md .stepper-small-md {
-    height: 28px;
-   
+
+.md .stepper-button, .md .stepper-button-minus, .md .stepper-button-plus {
+    border: 1px solid #8a8a8a;
+    color: #8a8a8a;
+    line-height: 34px;
+    height: 36px;
+    width: 40px;
+    -webkit-transition-duration: .3s;
+    transition-duration: .3s;
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+    overflow: hidden;
+}
+
+
+.md .stepper .stepper-input-wrap input, .md .stepper .stepper-value {
+    color: #8a8a8a;
+    font-size: 12px;
+    font-weight: 300;
+    text-align: center;
+}
+
+.md .stepper-input-wrap, .md .stepper-value {
+    border-top: 2px solid #8a8a8a;
+    border-bottom: 2px solid #8a8a8a;
+}
+
+.md .stepper-button-minus:after, .md .stepper-button-minus:before, .md .stepper-button-plus:after, .md .stepper-button-plus:before {
+    background: #8a8a8a;
 }
 
 

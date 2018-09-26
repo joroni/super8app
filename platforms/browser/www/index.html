@@ -9,10 +9,14 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="default">
   <meta name="theme-color" content="#2196f3">
   <meta name="format-detection" content="telephone=no">
-  <meta name="msapplication-tap-highlight" content="no">
+  <meta name="msapplication-tap-highbluegray" content="no">
   <title>My App</title>
 
   <link rel="stylesheet" href="framework7/css/framework7.min.css">
+  
+    <link rel="stylesheet" href="lib/framework7/css/framework7.material.colors.min.css">
+    
+    <link rel="stylesheet" href="lib/framework7/css/framework7.ios.colors.min.css">
   <link rel="stylesheet" href="css/icons.css">
   <link rel="stylesheet" href="css/app.css">
   <link rel="stylesheet" href="css/custom.css">
@@ -22,7 +26,7 @@
     <!-- Status bar overlay for fullscreen mode-->
     <div class="statusbar"></div>
     <!-- Left panel with cover effect-->
-    <div class="panel panel-left panel-cover theme-light">
+    <div class="panel panel-left panel-cover theme-bluegray">
       <div class="view">
         <div class="page">
           <div class="navbar">
@@ -49,20 +53,21 @@
               <div class="list links-list">
                 <ul>
                   <li>
-                    <a href="/accordion/" class="panel-close">My Profile</a>
+                 
+                    <a href="/page-loader-component/vladimir/123/about-me/1/?start=0&end=30#top"  class="panel-close" data-panel="left">My Profile</a>
                   </li>
                   <li>
-                    <a href="/action-sheet/" class="panel-close">Sales Report</a>
+                    <a href="/customers/" class="panel-close" data-panel="left">Sales Report</a>
+                  </li>
+                  <li> 
+                    <a href="/badge/" class="panel-close" data-panel="left">Notifications</a>
                   </li>
                   <li>
-                    <a href="/badge/" class="panel-close">Notifications</a>
-                  </li>
-                  <li>
-                    <a href="/buttons/" class="panel-close">Settings</a>
+                    <a href="#" class="panel-close" data-panel="left">Settings</a>
                   </li>
                 
                   <li>
-                    <a href="/logout/" class="panel-close">Logout</a>
+                    <a href="/logout/" class="panel-close" data-panel="left">Logout</a>
                   </li>
                 </ul>
               </div>
@@ -72,7 +77,7 @@
       </div>
     </div>
     <!-- Right panel with reveal effect-->
-    <div class="panel panel-right panel-reveal theme-dark">
+    <div class="panel panel-right panel-reveal theme-bluegray">
       <div class="view">
         <div class="page">
           <div class="navbar">
@@ -91,7 +96,7 @@ Goes here right panel
     </div>
 
     <!-- Views/Tabs container -->
-    <div class="views tabs ios-edges">
+    <div class="views tabs ios-edges theme-bluegray">
       <!-- Tabbar for switching views-tabs -->
       <div class="toolbar tabbar-labels toolbar-bottom-md">
         <div class="toolbar-inner">
@@ -107,6 +112,12 @@ Goes here right panel
             <i class="icon material-icons md-only">view_list</i>
             <span class="tabbar-label">Catalog</span>
           </a>
+          <a href="#view-customers" class="tab-link">
+              <i class="icon f7-icons ios-only">list</i>
+              <i class="icon f7-icons ios-only icon-ios-fill">list_fill</i>
+              <i class="icon material-icons md-only">view_list</i>
+              <span class="tabbar-label">Customers</span>
+            </a>
           <a href="#view-settings" class="tab-link">
             <i class="icon f7-icons ios-only">settings</i>
             <i class="icon f7-icons ios-only icon-ios-fill">settings_fill</i>
@@ -139,24 +150,14 @@ Goes here right panel
           </div>
 
           <!-- Scrollable page content-->
-          <div class="page-content">
+        <!--  <div class="page-content">
             <div class="block block-strong">
               <p>This is an example of tabs-layout application. The main point of such tabbed layout is that each tab contains independent view with its own routing and navigation.</p>
               <p>Each tab/view may have different layout, different navbar type (dynamic, fixed or static) or without navbar like this tab.</p>
             </div>
 
-            <div class="block-title">Navigation</div>
-            <div class="list">
-              <ul>
-                <li>
-                  <a href="/about/" class="item-content item-link">
-                    <div class="item-inner">
-                      <div class="item-title">About</div>
-                    </div>
-                  </a>
-                </li>
-              </ul>
-            </div>
+            
+           
 
             <div class="block-title">Modals</div>
             <div class="block block-strong">
@@ -180,11 +181,14 @@ Goes here right panel
                   <a href="#" class="button button-raised button-fill panel-open" data-panel="right">Right Panel</a>
                 </div>
               </div>
-            </div>
+            </div>-->
 
             <div class="block-title searchbar-hide-on-search">Page Loaders & Router</div>
             <div class="list links-list searchbar-hide-on-search">
               <ul>
+                <li>
+                  <a href="/autocomplete/">Customers</a>
+                </li>
                 <li>
                   <a href="/page-loader-template7/vladimir/123/about-me/1/?start=0&end=30#top">Template7 Page</a>
                 </li>

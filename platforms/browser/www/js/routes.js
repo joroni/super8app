@@ -1,7 +1,7 @@
 routes = [
   {
     path: '/',
-    url: './index.html',
+    url: './',
   },
   {
     path: '/about/',
@@ -14,6 +14,10 @@ routes = [
   {
     path: '/product/:id/',
     componentUrl: './pages/product.html',
+  },
+  {
+    path: '/autocomplete/',
+    componentUrl: './pages/autocomplete.html',
   },
   {
     path: '/settings/',
