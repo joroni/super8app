@@ -1,0 +1,38 @@
+<template>
+  <div class="page" data-name="catalog">
+    <div class="navbar">
+      <div class="navbar-inner sliding">
+        <div class="left">
+          <a href="#" class="link back">
+            <i class="icon icon-back"></i>
+            <span class="ios-only">Back</span>
+          </a>
+        </div>
+        <div class="title">{{customer.name}}</div>
+      </div>
+    </div>
+    <div class="page-content">
+      <div class="block-title">About {{customer.title}}</div>
+      <div class="block-media"><img src="img/{{customer.customerimg}}"  width="100%" /></div>
+      <div class="block block-strong">
+        {{customer.phone}}
+      </div>
+    </div>
+  </div>
+</template>
+<script>
+  return {
+    data: function () {
+      var productId = this.$route.params.id;
+      var currentCustomer;
+      this.$root.customers.forEach(function (customer) {
+        if (customer.id === productId) {
+          currentCustomer= customer;
+        }
+      });
+      return {
+        customer: currentCustomer,
+      };
+    }
+  };
+</script>

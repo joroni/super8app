@@ -33,6 +33,10 @@ routes = [
     templateUrl: './pages/page-loader-template7.html',
   },
   {
+    path: '/customer/:user/:userId/:posts/:postId/',
+    templateUrl: './pages/customer.html',
+  },
+  {
     path: '/page-loader-component/:user/:userId/:posts/:postId/',
     componentUrl: './pages/page-loader-component.html',
   },
