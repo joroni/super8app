@@ -16,6 +16,10 @@ routes = [
     componentUrl: './pages/product.html',
   },
   {
+    path: '/customer/:id/',
+    componentUrl: './pages/customer.html',
+  },
+  {
     path: '/autocomplete/',
     componentUrl: './pages/autocomplete.html',
   },

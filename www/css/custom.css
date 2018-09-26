@@ -101,7 +101,7 @@ button.buy-button {
   .demo-swiper {
     margin: 0px 0 35px;
     font-size: 18px;
-    height: 120px;
+    height: 200px;
   }
   .demo-swiper.demo-swiper-auto .swiper-slide {
     width: 85%;
@@ -117,7 +117,7 @@ button.buy-button {
 
   .demo-swiper .swiper-slide > div {
   
-    margin: 10% 40% 0 40%;
+    margin: 20% 40% 0 40%;
 }
 
   .grade-grey{

@@ -63,57 +63,6 @@ var app  = new Framework7({
           price: '756',
           productimg: 'ghee.jpg',
           description: 'Expedita sequi perferendis quod illum pariatur aliquam, alias laboriosam! Vero blanditiis placeat, mollitia necessitatibus reprehenderit. Labore dolores amet quos, accusamus earum asperiores officiis assumenda optio architecto quia neque, quae eum.'
-        },
-        {
-          customers: [
-            {
-              id: '1',
-              name: 'Jane Dough',
-              phone: '111 234 1234',
-              invoicestate: 'paid'
-            },
-            {
-              id: '2',
-              name: 'Helen Dela Cruz',
-              phone: '111 234 1234',
-              invoicestate: 'paid'
-            },
-            {
-              id: '3',
-              name: 'Mark Wolberg',
-              phone: '111 234 1234',
-              invoicestate: 'paid'
-            },
-            {
-              id: '4',
-              name: 'Steven Jackson',
-              phone: '111 876 4643',
-              invoicestate: 'paid'
-            },
-            {
-              id: '5',
-              name: 'Liza Grant',
-              phone: '111 234 1234',
-              invoicestate: 'paid'
-            },
-            {
-              id: '6',
-              name: 'Carlo Mehija',
-              phone: '345 745 1123',
-              invoicestate: 'due'
-            },
-            {
-              id: '7',
-              name: 'Rica Butter',
-              phone: '443 121 8192',
-              invoicestate: 'pending'
-            },
-            {
-              id: '8',
-              name: 'Anna Nya',
-              phone: '558 453 3478',
-              invoicestate: 'pending'
-            }]
         }
       ]
     };
@@ -165,6 +114,16 @@ $$('#my-login-screen .login-button').on('click', function () {
   app.dialog.alert('Username: ' + username + '<br>Password: ' + password);
 });
 
+
+
+// Login Screen Demo
+$$('.logout-button').on('click', function () {
+  app.loginScreen.open('#my-login-screen');
+  console.log("no user");
+  localStorage.removeItem("usr");
+  localStorage.removeItem("pass");
+
+});
 
 var swiper = app.swiper.get('.swiper-container');
 

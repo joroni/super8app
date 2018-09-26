@@ -3,7 +3,7 @@
     "id": "1",
     "name": "Jane Dough",
     "phone": "111 234 1234",
-    "invoicestate": "paid"
+    "invoicestate": "pending"
   },
   {
     "id": "2",
