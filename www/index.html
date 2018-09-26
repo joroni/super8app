@@ -112,12 +112,6 @@ Goes here right panel
             <i class="icon material-icons md-only">view_list</i>
             <span class="tabbar-label">Catalog</span>
           </a>
-          <a href="#view-customers" class="tab-link">
-              <i class="icon f7-icons ios-only">list</i>
-              <i class="icon f7-icons ios-only icon-ios-fill">list_fill</i>
-              <i class="icon material-icons md-only">view_list</i>
-              <span class="tabbar-label">Customers</span>
-            </a>
           <a href="#view-settings" class="tab-link">
             <i class="icon f7-icons ios-only">settings</i>
             <i class="icon f7-icons ios-only icon-ios-fill">settings_fill</i>
@@ -150,16 +144,23 @@ Goes here right panel
           </div>
 
           <!-- Scrollable page content-->
-        <!--  <div class="page-content">
-            <div class="block block-strong">
-              <p>This is an example of tabs-layout application. The main point of such tabbed layout is that each tab contains independent view with its own routing and navigation.</p>
-              <p>Each tab/view may have different layout, different navbar type (dynamic, fixed or static) or without navbar like this tab.</p>
-            </div>
+        
 
+            <div class="page-content">
+                <div data-pagination='{"el": ".swiper-pagination"}' data-loop="true" class="swiper-container swiper-init demo-swiper">
+                  <div class="swiper-pagination"></div>
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide grade-grey"><div>Slide 1</div></div>
+                    <div class="swiper-slide j-shine"><div>Slide 2</div></div>
+                    <div class="swiper-slide summer-dog"><div>Slide 3</div></div>
+                  
+                  </div>
+                </div>
+             
             
            
 
-            <div class="block-title">Modals</div>
+          <!--  <div class="block-title">Modals</div>
             <div class="block block-strong">
               <div class="row">
                 <div class="col-50">
@@ -183,13 +184,16 @@ Goes here right panel
               </div>
             </div>-->
 
-            <div class="block-title searchbar-hide-on-search">Page Loaders & Router</div>
+            <div class="block-title searchbar-hide-on-search"></div>
             <div class="list links-list searchbar-hide-on-search">
               <ul>
                 <li>
                   <a href="/autocomplete/">Customers</a>
                 </li>
                 <li>
+                    <a href="#" class="popup-open" data-popup="#my-popup">Place New Order</a>
+                </li>
+                <!--<li>
                   <a href="/page-loader-template7/vladimir/123/about-me/1/?start=0&end=30#top">Template7 Page</a>
                 </li>
                 <li>
@@ -200,7 +204,7 @@ Goes here right panel
                 </li>
                 <li>
                   <a href="/request-and-load/user/123456/">Request Data & Load</a>
-                </li>
+                </li>-->
               </ul>
             </div>
           </div>

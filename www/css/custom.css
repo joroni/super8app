@@ -82,3 +82,52 @@ button.buy-button {
 .centered {
     text-align: center !important;
 }
+
+/* A bit of demo styles */;
+.demo-swiper .swiper-slide {
+    font-size: 25px;
+    font-weight: 300;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    color: #000;
+  }
+  .demo-swiper .swiper-slide {
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+
+  }
+  .demo-swiper {
+    margin: 0px 0 35px;
+    font-size: 18px;
+    height: 120px;
+  }
+  .demo-swiper.demo-swiper-auto .swiper-slide {
+    width: 85%;
+  }
+  .demo-swiper.demo-swiper-auto .swiper-slide:nth-child(2n) {
+    width: 70%;
+  }
+  .demo-swiper.demo-swiper-auto .swiper-slide:nth-child(3n) {
+    width: 30%;
+  }
+
+
+
+  .demo-swiper .swiper-slide > div {
+  
+    margin: 10% 40% 0 40%;
+}
+
+  .grade-grey{
+    background: linear-gradient(to right, rgb(189, 195, 199), rgb(44, 62, 80));
+  }
+
+  .j-shine {
+    background: linear-gradient(to right, rgb(18, 194, 233), rgb(196, 113, 237), rgb(246, 79, 89));
+  }
+  .summer-dog {
+    background: linear-gradient(to right, rgb(168, 255, 120), rgb(120, 255, 214));
+
+  }

@@ -11,7 +11,7 @@
                       {{#each customers}}
                       <li>
                           <a href="#" class="item-link item-content">
-                            <div class="item-media"><img src="..." width="44"></div>
+                            <div class="item-media"><img src="img/avatar.jpg" width="44"></div>
                             <div class="item-inner">
                               <div class="item-title-row">
                                 <div class="item-title">{{name}}</div>
@@ -29,7 +29,7 @@
   </div>
 <script>
   return {
-    data2: function () {
+    data: function () {
       return {
         customers: this.$root.customers,
       };
